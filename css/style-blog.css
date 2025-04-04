@@ -49,15 +49,19 @@
 
 .carousel{
     height: auto !important;
+    
+
 }
  
 #carouselProyecto{
     margin-top: 0px !important;
+    min-height: 250px !important;
 }
 
 
 .modal-content{
     background-color: #000000d7;
+    
 }
 
 
