@@ -1,0 +1,74 @@
+/*******************************/
+/********* BLOG CSS **********/
+/*******************************/
+
+
+
+.carousel-item img {
+    object-fit: cover;
+    height: 400px; /* Ajustar altura de las imágenes */
+  }
+  .carousel-thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+  }
+  .carousel-thumbnails img:hover {
+    opacity: 0.7;
+  }
+  .project-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .project-info h3 {
+    font-size: 1.5rem;
+  }
+  .project-info p {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+
+  .modal-lg, .modal-xl{
+    --bs-modal-width: 70% !important;
+  }
+
+  .carousel .carousel-inner, .carousel .carousel-item {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.carousel{
+    height: auto !important;
+}
+ 
+#carouselProyecto{
+    margin-top: 0px !important;
+}
+
+
+.modal-content{
+    background-color: #000000d7;
+}
+
+
+.btn-close{
+    background-color: white;
+    color: white;
+}
+.modal-header{
+    border: none;
+}
+
+.modal-title{
+    color: white;
+}

@@ -19,16 +19,7 @@
     });
     
     
-    // Sticky Navbar
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 90) {
-            $('.nav-bar').addClass('nav-sticky');
-            $('.carousel, .page-header').css("margin-top", "73px");
-        } else {
-            $('.nav-bar').removeClass('nav-sticky');
-            $('.carousel, .page-header').css("margin-top", "0");
-        }
-    });
+
     
     
     // Dropdown on mouse hover
@@ -137,115 +128,139 @@
 
 
 
+const proyectos = [
+    {
+    titulo: "Proyecto A",
+    descripcion: "Este es el Proyecto A. Tiene muchas funcionalidades bacanes.",
+    fecha:"25/20/2004",
+    imagenPrincipal: "img/portfolio-1.jpg",
+    imagenes: [
+        "img/portfolio-1.jpg",
+        "img/portfolio-2.jpg",
+        "img/portfolio-3.jpg"
+    ]
+    },
 
+    {
+    titulo: "Proyecto B",
+    descripcion: "Este es el Proyecto B. También está bacan.",
+    fecha:"25/20/2004",
+    imagenPrincipal: "img/portfolio-2.jpg",
+    imagenes: [
+        "img/portfolio-1.jpg",
+        "img/portfolio-2.jpg",
+        "img/portfolio-3.jpg"
+    ]
+    },
 
-// -------------------------------------------------------------------- SCRIPT DEL APARTADO BLOG --------------------------------------------------------------------
+    {
+    titulo: "Proyecto C",
+    descripcion: "Este es el Proyecto C. Otro de mis favoritos.",
+    fecha:"25/20/2004",
+    imagenPrincipal: "img/portfolio-3.jpg",
+    imagenes: [
+        "img/portfolio-1.jpg",
+        "img/portfolio-2.jpg",
+        "img/portfolio-3.jpg"
+    ]
+    },
 
-// Simulación de los artículos del blog
-const blogData = [
-    { img: 'img/blog-1.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-1.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-1.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-1.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-1.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-1.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
+    {
+        titulo: "Proyecto D",
+        descripcion: "Este es el Proyecto A. Tiene muchas funcionalidades bacanes.",
+        fecha:"25/20/2004",
+        imagenPrincipal: "img/portfolio-1.jpg",
+        imagenes: [
+            "img/portfolio-1.jpg",
+            "img/portfolio-2.jpg",
+            "img/portfolio-3.jpg"
+        ]
+        },
+        
+        {
+        titulo: "Proyecto E",
+        descripcion: "Este es el Proyecto B. También está bacan.",
+        fecha:"25/20/2004",
+        imagenPrincipal: "img/portfolio-2.jpg",
+        imagenes: [
+            "img/portfolio-1.jpg",
+            "img/portfolio-2.jpg",
+            "img/portfolio-3.jpg"
+        ]
+        },
+    
+        {
+        titulo: "Proyecto F",
+        descripcion: "Este es el Proyecto C. Otro de mis favoritos.",
+        fecha:"25/20/2004",
+        imagenPrincipal: "img/portfolio-3.jpg",
+        imagenes: [
+            "img/portfolio-1.jpg",
+            "img/portfolio-2.jpg",
+            "img/portfolio-3.jpg"
+        ]
+        }
 
-    { img: 'img/blog-2.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-2.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-2.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-2.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-2.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-2.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-
-    { img: 'img/blog-3.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-3.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-3.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-3.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-3.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' },
-    { img: 'img/blog-3.jpg', title: 'Lorem ipsum dolor sit', description: 'Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.' }
-    // Aquí puedes agregar más artículos
 ];
 
-const itemsPerPage = 6; // Número de artículos por página
-let currentPage = 1;
+const contenedor = document.getElementById("proyectos-container");
 
-// Función para cargar los artículos del blog para la página actual
-function loadBlogPage(page) {
-    const start = (page - 1) * itemsPerPage;
-    const end = page * itemsPerPage;
-    const currentPageData = blogData.slice(start, end);
-
-    // Cargar los artículos en la página
-    const blogContainer = document.getElementById('blog-items');
-    blogContainer.innerHTML = ''; // Limpiar la página
-
-    currentPageData.forEach(item => {
-        const blogItem = document.createElement('div');
-        blogItem.classList.add('col-lg-4', 'col-md-6', 'wow', 'fadeInUp');
-        blogItem.innerHTML = `
-            <div class="blog-item">
-                <div class="blog-img">
-                    <img src="${item.img}" alt="Image">
-                </div>
-                <div class="blog-title">
-                    <h3>${item.title}</h3>
-                    <a class="btn" href="#">+</a>
-                </div>
-                <div class="blog-meta">
-                    <p>By<a href="#">Admin</a></p>
-                    <p>In<a href="#">Construction</a></p>
-                </div>
-                <div class="blog-text">
-                    <p>${item.description}</p>
-                </div>
-            </div>
-        `;
-        blogContainer.appendChild(blogItem);
+    proyectos.forEach((proyecto, index) => {
+      const div = document.createElement("div");
+      div.className = "col-md-4 mb-4";
+      div.innerHTML = `
+        <div class="card h-100 shadow-sm">
+          <img src="${proyecto.imagenPrincipal}" class="card-img-top" alt="${proyecto.titulo}" style="cursor:pointer;" onclick="mostrarModal(${index})">
+          <div class="card-body">
+            <h5 class="card-title">${proyecto.titulo}</h5>
+          </div>
+        </div>
+      `;
+      contenedor.appendChild(div);
     });
 
-    // Actualizar la paginación
-    updatePagination(page);
-}
+    function mostrarModal(index) {
+      const proyecto = proyectos[index];
 
-// Función para actualizar los controles de paginación
-function updatePagination(page) {
-    const pagination = document.getElementById('pagination');
-    pagination.innerHTML = ''; // Limpiar la paginación
+      // Set titulo y descripcion
+      document.getElementById("modalTitulo").innerText = proyecto.titulo;
+      document.getElementById("modalDescripcion").innerText = proyecto.descripcion;
+      document.getElementById("modalFecha").innerText = proyecto.fecha;
 
-    const totalPages = Math.ceil(blogData.length / itemsPerPage);
+      // Carousel de imágenes
+      const imagenesDiv = document.getElementById("modalImagenes");
+      imagenesDiv.innerHTML = ""; // Limpiar contenido previo
 
-    // Botón "Previous"
-    if (page > 1) {
-        pagination.innerHTML += `<li class="page-item"><a class="page-link" href="#" onclick="changePage(${page - 1})">Anterior</a></li>`;
-    } else {
-        pagination.innerHTML += `<li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>`;
+      // Miniaturas
+      const miniaturasDiv = document.getElementById("modalMiniaturas");
+      miniaturasDiv.innerHTML = ""; // Limpiar miniaturas previas
+
+      proyecto.imagenes.forEach((img, idx) => {
+        // Agregar al carousel
+        const item = document.createElement("div");
+        item.className = `carousel-item ${idx === 0 ? 'active' : ''}`;
+        item.innerHTML = `<img src="${img}" class="d-block w-100" alt="Imagen del Proyecto">`;
+        imagenesDiv.appendChild(item);
+
+        // Agregar miniatura
+        const thumbnail = document.createElement("img");
+        thumbnail.src = img;
+        thumbnail.className = "carousel-thumbnail";
+        thumbnail.onclick = () => selectImage(idx);
+        miniaturasDiv.appendChild(thumbnail);
+      });
+
+      // Mostrar el modal
+      const modal = new bootstrap.Modal(document.getElementById('modalProyecto'));
+      modal.show();
     }
 
-    // Páginas
-    for (let i = 1; i <= totalPages; i++) {
-        pagination.innerHTML += `
-            <li class="page-item ${i === page ? 'active' : ''}">
-                <a class="page-link" href="#" onclick="changePage(${i})">${i}</a>
-            </li>
-        `;
+    // Cambiar imagen en el carousel al hacer clic en la miniatura
+    function selectImage(index) {
+      const carousel = document.getElementById("carouselProyecto");
+      const carouselInstance = bootstrap.Carousel.getInstance(carousel);
+      carouselInstance.to(index);
     }
 
-    // Botón "Next"
-    if (page < totalPages) {
-        pagination.innerHTML += `<li class="page-item"><a class="page-link" href="#" onclick="changePage(${page + 1})">Siguiente</a></li>`;
-    } else {
-        pagination.innerHTML += `<li class="page-item disabled"><a class="page-link" href="#">Siguiente</a></li>`;
-    }
-}
-
-// Función para cambiar de página
-function changePage(page) {
-    currentPage = page;
-    loadBlogPage(currentPage);
-}
-
-// Inicializar la página con los primeros artículos
-window.onload = () => loadBlogPage(currentPage);
 
 
-//--------------------------------------------------------------------  END SCRIPT DEL APARTADO BLOG --------------------------------------------------------------------
