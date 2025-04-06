@@ -149,6 +149,13 @@ a:focus {
 }
 
 
+
+.container{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+
 /**********************************/
 /*********** Nav Bar CSS **********/
 /**********************************/
@@ -257,7 +264,7 @@ a:focus {
 .carousel {
     position: relative;
     width: 100%;
-    height: calc(100vh - 170px);
+    height: 100vh;
     min-height: 400px;
     margin: 0 auto;
     text-align: center;
@@ -592,7 +599,7 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+    padding: 100px 0;
 }
 
 .about .section-header {
@@ -663,14 +670,7 @@ a:focus {
     justify-content: center;
 }
 
-.fact .fact-icon [class^="flaticon-"]::before {
-    margin: 0;
-    font-size: 60px;
-    line-height: 60px;
-    background-image: linear-gradient(#ffffff, #e4e4e4);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .fact .fact-right .fact-icon [class^="flaticon-"]::before {
     background-image: linear-gradient(#ffffff, #000000);
@@ -715,7 +715,7 @@ a:focus {
 .service {
     position: relative;
     width: 100%;
-    padding: 45px 0 15px 0;
+    padding: 90px 0 15px 0;
 }
 
 .service .service-item {
@@ -766,16 +766,16 @@ a:focus {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    justify-content: center;
 }
 
 .service .service-text h3 {
     margin: 0;
     padding: 0 15px 0 25px;
-    width: calc(100% - 60px);
     font-size: 20px;
     font-weight: 700;
     color: #e4e4e4;
-    text-align: left;
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -1242,6 +1242,20 @@ a:focus {
     color: #999999;
 }
 
+.btnver a{
+
+    margin-top: 4rem;
+    border-radius: 1px ;
+    border-color: #000000;
+
+}
+
+
+.btnver a:hover{
+    background-color: #000000;
+    color: white;
+}
+
 
 /*******************************/
 /******* Single Post CSS *******/
@@ -1633,10 +1647,7 @@ a:focus {
     left: 1px;
 }
 
-.sidebar .category-widget ul li span {
-    display: inline-block;
-    float: right;
-}
+
 
 .sidebar .sidebar-widget .tag-widget {
     position: relative;
@@ -1823,7 +1834,8 @@ a:focus {
 .contact {
     position: relative;
     width: 100%;
-    padding: 45px 0;
+    padding: 100px 0;
+    background-color: #000000
 }
 
 .contact .col-md-6 {
@@ -1944,6 +1956,11 @@ a:focus {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+
+.text-contact h2{
+    color: white;
 }
 
 
