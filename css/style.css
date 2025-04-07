@@ -307,7 +307,6 @@ a:focus {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 170px);
     min-height: 400px;
 }
 
