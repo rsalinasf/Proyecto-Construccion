@@ -139,76 +139,123 @@
 
 const proyectos = [
     {
-    titulo: "Proyecto A",
-    descripcion: "Este es el Proyecto A. Tiene muchas funcionalidades bacanes.",
+    titulo: "Proyecto Brisas Santo Domingo",
+    descripcion: "Este es el Proyecto Brisas Santo Domingo.",
     fecha:"25/20/2004",
-    imagenPrincipal: "img/portfolio-1.jpg",
+    imagenPrincipal: "img/Brisas-Santo-Domingo/1.jpg",
     imagenes: [
-        "img/portfolio-1.jpg",
-        "img/portfolio-2.jpg",
-        "img/carousel-1.jpg"
+        "img/Brisas-Santo-Domingo/1.jpg",
+        "img/Brisas-Santo-Domingo/2.jpg",
+        "img/Brisas-Santo-Domingo/3.jpg",
+        "img/Brisas-Santo-Domingo/4.jpg",
+        "img/Brisas-Santo-Domingo/5.jpg",
+        "img/Brisas-Santo-Domingo/6.jpg",
+        "img/Brisas-Santo-Domingo/7.jpg"
     ]
     },
 
     {
-    titulo: "Proyecto B",
-    descripcion: "Este es el Proyecto B. También está bacan.",
+    titulo: "Proyecto Casa Leyda",
+    descripcion: "Este es el Proyecto Casa Leyda.",
     fecha:"25/20/2004",
-    imagenPrincipal: "img/portfolio-2.jpg",
+    imagenPrincipal: "img/Casa-Leyda/1.jpg",
     imagenes: [
-        "img/portfolio-1.jpg",
-        "img/portfolio-2.jpg",
-        "img/portfolio-3.jpg"
+        "img/Casa-Leyda/1.jpg",
+        "img/Casa-Leyda/2.jpg",
+        "img/Casa-Leyda/3.jpg",
+        "img/Casa-Leyda/4.jpg"
     ]
     },
 
     {
-    titulo: "Proyecto C",
-    descripcion: "Este es el Proyecto C. Otro de mis favoritos.",
+    titulo: "Proyecto Interior Santo Domingo",
+    descripcion: "Este es el Proyecto Interior Santo Domingo.",
     fecha:"25/20/2004",
-    imagenPrincipal: "img/portfolio-3.jpg",
+    imagenPrincipal: "img/Interior-Santo-Domingo/1.jpg",
     imagenes: [
-        "img/portfolio-1.jpg",
-        "img/portfolio-2.jpg",
-        "img/portfolio-3.jpg"
+        "img/Interior-Santo-Domingo/1.jpg",
+        "img/Interior-Santo-Domingo/2.jpg",
+        "img/Interior-Santo-Domingo/3.jpg",
+        "img/Interior-Santo-Domingo/4.jpg"
     ]
     },
 
     {
-        titulo: "Proyecto D",
-        descripcion: "Este es el Proyecto A. Tiene muchas funcionalidades bacanes.",
+        titulo: "Proyecto Proyecto Interior",
+        descripcion: "Este es el Proyecto Interior.",
         fecha:"25/20/2004",
-        imagenPrincipal: "img/portfolio-1.jpg",
+        imagenPrincipal: "img/Proyecto-Interior/1.jpg",
         imagenes: [
-            "img/portfolio-1.jpg",
-            "img/portfolio-2.jpg",
-            "img/portfolio-3.jpg"
+            "img/Proyecto-Interior/1.jpg",
+            "img/Proyecto-Interior/2.jpg",
+            "img/Proyecto-Interior/3.jpg",
+            "img/Proyecto-Interior/4.jpg"
         ]
         },
         
         {
-        titulo: "Proyecto E",
-        descripcion: "Este es el Proyecto B. También está bacan.",
+        titulo: "Proyecto Santo Domingo 1",
+        descripcion: "Este es el Proyecto Santo-Domingo 1.",
         fecha:"25/20/2004",
-        imagenPrincipal: "img/portfolio-2.jpg",
+        imagenPrincipal: "img/Santo-Domingo/1.jpg",
         imagenes: [
-            "img/portfolio-1.jpg",
-            "img/portfolio-2.jpg",
-            "img/portfolio-3.jpg"
+            "img/Santo-Domingo/1.jpg",
+            "img/Santo-Domingo/2.jpg"
         ]
         },
     
         {
-        titulo: "Proyecto F",
-        descripcion: "Este es el Proyecto C. Otro de mis favoritos.",
+        titulo: "Proyecto Santo Domingo 2",
+        descripcion: "Este es el Proyecto Santo Domingo 2.",
         fecha:"25/20/2004",
-        imagenPrincipal: "img/portfolio-3.jpg",
+        imagenPrincipal: "img/Santo-Domingo-2/1.jpg",
         imagenes: [
-            "img/portfolio-1.jpg",
-            "img/portfolio-2.jpg",
-            "img/portfolio-3.jpg"
+            "img/Santo-Domingo-2/1.jpg",
+            "img/Santo-Domingo-2/2.jpg",
+            "img/Santo-Domingo-2/3.jpg",
+            "img/Santo-Domingo-2/4.jpg",
+            "img/Santo-Domingo-2/5.jpg"
         ]
+        },
+
+        {
+            titulo: "Proyecto Vidrios Vista Libre",
+            descripcion: "Este es el Proyecto Vidrios Vista Libre",
+            fecha:"25/20/2004",
+            imagenPrincipal: "img/Vidrios-Vista-Libre/1.jpg",
+            imagenes: [
+                "img/Vidrios-Vista-Libre/1.jpg",
+                "img/Vidrios-Vista-Libre/2.jpg"
+            ]
+        },
+
+        {
+            titulo: "Proyecto Proyecto Litoral Central",
+            descripcion: "Este es el Proyecto Vidrios Vista Libre",
+            fecha:"25/20/2004",
+            imagenPrincipal: "img/Proyecto Litoral Central/1.jpg",
+            imagenes: [
+                "img/Proyecto Litoral Central/1.jpg",
+                "img/Proyecto Litoral Central/2.jpg",
+                "img/Proyecto Litoral Central/3.jpg",
+                "img/Proyecto Litoral Central/4.jpg",
+                "img/Proyecto Litoral Central/5.jpg",
+                "img/Proyecto Litoral Central/6.jpg"
+            ]
+        },
+
+        {
+            titulo: "Proyecto Proyecto Remodelación",
+            descripcion: "Este es el Proyecto Vidrios Vista Libre",
+            fecha:"25/20/2004",
+            imagenPrincipal: "img/Proyecto Remodelación/1.jpg",
+            imagenes: [
+                "img/Proyecto Remodelación/1.jpg",
+                "img/Proyecto Remodelación/2.jpg",
+                "img/Proyecto Remodelación/3.jpg"
+            ]
         }
+        
 
 ];
 

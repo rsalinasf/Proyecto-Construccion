@@ -165,6 +165,10 @@ a:focus {
     transition: .3s;
 }
 
+.logo{
+    max-width: 100px;
+}
+
 .nav-bar .container-fluid {
     padding: 0;
 }
@@ -316,9 +320,10 @@ a:focus {
 
 .carousel .carousel-caption h1 {
     color: #ffffff;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 700;
     margin-bottom: 35px;
+    text-transform: uppercase;
 }
 
 .carousel .carousel-caption .btn {
@@ -478,7 +483,7 @@ a:focus {
 }
 
 .section-header p {
-    color: #e4e4e4;
+    color: #575757;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -1834,38 +1839,8 @@ a:focus {
 .contact {
     position: relative;
     width: 100%;
-    padding: 100px 0;
-    background-color: #ffffff
+    padding: 120px 0;
 }
-
-.c-contact{
-    background-color: #000000;
-    border-radius: 15px;
-    padding: 4rem;
-}
-
-.text-contact{
-    background-color: white;
-    padding: 1rem;
-    
-    border-radius: 15px;
-}
-
-.text-contact p, .text-contact h2 {
-    color: black !important;
-}
-
-
-.c-form {
-    background-color: white !important;
-    border-radius: 15px;
-    padding: 2rem;
-}
-
-.c-form p, .c-form input{
-    color: black !important;
-}
-
 
 .contact .col-md-6 {
     padding-top: 30px;
@@ -1877,7 +1852,8 @@ a:focus {
 }
 
 .contact .col-md-6:last-child {
-    background: #000000;
+    background: #ffffff;
+    border: #000000 1px solid;
 }
 
 .contact .contact-info {
@@ -1898,7 +1874,7 @@ a:focus {
 
 .contact .contact-item [class^="flaticon-"]::before {
     margin: 0;
-    color: #e4e4e4;
+    color: #ffffff;
     font-size: 40px;
 }
 
@@ -1909,7 +1885,7 @@ a:focus {
 }
 
 .contact .contact-text h2 {
-    color: #e4e4e4;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 600;
 }
@@ -1932,17 +1908,19 @@ a:focus {
 .contact .contact-form input {
     color: #000000;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-width: 1px;
-    background: black;
+    border-color: black;
+    background: white;
 }
 
 .contact .contact-form textarea {
     color: #000000;
     height: 185px;
-    border-radius: 10px;
+    border-radius: 15px;
     border-width: 1px;
-    background: black;
+    border-color: black;
+    background: white;
 }
 
 .contact .contact-form input:focus,
@@ -1951,43 +1929,38 @@ a:focus {
 }
 
 .contact .contact-form .form-control::placeholder {
-  color: #ffffff;
+  color: #000000;
   opacity: 1;
 }
 
 .contact .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
+  color: #000000;
 }
 
 .contact .contact-form .form-control::-ms-input-placeholder {
-  color: #ffffff;
+  color: #000000;
 }
 
 .contact .contact-form .btn {
     padding: 16px 30px;
     font-size: 16px;
     font-weight: 600;
-    color: #ffffff;
-    background: #000000;
-    border: none;
-    border-radius: 10px;
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0;
     transition: .3s;
 }
 
 .contact .contact-form .btn:hover {
-    color: #afafaf;
-    background: #4e4e4e;
+    color: #ffffff;
+    background: #000000;
 }
 
 .contact .help-block ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-}
-
-
-.text-contact h2{
-    color: white;
 }
 
 

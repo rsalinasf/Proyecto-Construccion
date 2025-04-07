@@ -5,7 +5,7 @@
 
 
 .carousel-item img {
-    object-fit: cover;
+    object-fit: contain !important;
     height: 400px; /* Ajustar altura de las imágenes */
   }
   .carousel-thumbnail {
