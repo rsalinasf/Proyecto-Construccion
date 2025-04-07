@@ -146,7 +146,7 @@ const proyectos = [
     imagenes: [
         "img/portfolio-1.jpg",
         "img/portfolio-2.jpg",
-        "img/portfolio-3.jpg"
+        "img/carousel-1.jpg"
     ]
     },
 
