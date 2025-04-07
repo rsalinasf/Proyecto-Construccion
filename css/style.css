@@ -1137,6 +1137,7 @@ a:focus {
     margin-bottom: 30px;
 }
 
+
 .blog .blog-img {
     position: relative;
     overflow: hidden;
@@ -1144,7 +1145,31 @@ a:focus {
 
 .blog .blog-img img {
     width: 100%;
+    transition: 0.5s ease;
+    display: block;
 }
+
+.blog-img a::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background: rgba(0, 0, 0, 0.5);
+opacity: 0;
+transition: 0.5s ease;
+z-index: 1
+}
+
+.blog-img a:hover::before{
+opacity: 1;
+}
+
+
+
+
+
 
 .blog .blog-title {
     display: flex;
@@ -1154,6 +1179,7 @@ a:focus {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    justify-content: center;
 }
 
 .blog .blog-title h3 {
@@ -1163,7 +1189,7 @@ a:focus {
     font-size: 18px;
     font-weight: 700;
     color: #e4e4e4;
-    text-align: left;
+    text-align: center;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
