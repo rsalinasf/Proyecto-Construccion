@@ -713,6 +713,24 @@ a:focus {
 }
 
 
+
+
+@media screen and (max-width: 390px) {
+
+    .fact .fact-text h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .fact .fact-text p {
+        margin: 0;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+  
+  }
+
 /*******************************/
 /********* Service CSS *********/
 /*******************************/
@@ -2005,9 +2023,7 @@ opacity: 1;
 
 @media (max-width:  576px) {
 
-    .c-contact{
-        margin: 1rem !important;
-    }
+
 
 
 }
