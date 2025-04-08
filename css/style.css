@@ -1054,7 +1054,7 @@ a:focus {
 
 .testimonial .testimonial-slider-nav {
     position: relative;
-    width: 300px;
+    width: 260px;
     margin: 0 auto;
 }
 
@@ -1165,8 +1165,6 @@ z-index: 1
 .blog-img a:hover::before{
 opacity: 1;
 }
-
-
 
 
 
@@ -1987,6 +1985,34 @@ opacity: 1;
     padding: 0;
     list-style-type: none;
 }
+
+.contact-cel{
+    display: none;
+    border: #000000;
+}
+
+
+@media (max-width:  991.98px) {
+    .contact-pc {
+        display: none !important;
+    }
+
+    .contact-cel{
+        display: contents;
+    }
+
+}
+
+@media (max-width:  576px) {
+
+    .c-contact{
+        margin: 1rem !important;
+    }
+
+
+}
+
+
 
 
 /*******************************/

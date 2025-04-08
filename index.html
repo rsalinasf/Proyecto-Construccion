@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Builderz</title>
+        <title>Constructora Bucalemu</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
         <!-- Favicon -->
@@ -40,7 +40,7 @@
                                 
                                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
                                 <a href="#nosotros" class="nav-item nav-link">Acerca de Nosotros</a>
-                                <a href="team.html" class="nav-item nav-link">Nuestro Equipo</a>
+                                <!--<a href="team.html" class="nav-item nav-link">Nuestro Equipo</a>-->
                                 <a href="blog.html" class="nav-item nav-link">Proyectos</a>
                                 <a href="#contacto" class="nav-item nav-link">Contacto</a>
                             </div>
@@ -397,12 +397,12 @@
 
             <!-- Contact Start -->
             <div class="contact wow fadeInUp" id="contacto">
-                <div class="container">
+                <div class="container c-contact">
                     <div class="section-header text-center">
                         <p></p>
                         <h2>CONTACTANOS</h2>
                     </div>
-                    <div class="row">
+                    <div class="row contact-pc">
                         <div class="col-md-6">
                             <div class="contact-info">
                                 <div class="contact-item">
@@ -430,6 +430,35 @@
                             </div>
                         </div>
                         <div class="col-md-6">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Nombre" required="required" data-validation-required-message="Porfavor ingrese su Nombre" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required="required" data-validation-required-message="Porfavor ingrese su email" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Asunto" required="required" data-validation-required-message="Ingrese un asunto" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control" id="message" placeholder="Mensaje" required="required" data-validation-required-message="Ingrese un mensaje"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit" id="sendMessageButton">Enviar Correo</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row contact-cel">
+                        <div class="col-md-12">
                             <div class="contact-form">
                                 <div id="success"></div>
                                 <form name="sentMessage" id="contactForm" novalidate="novalidate">

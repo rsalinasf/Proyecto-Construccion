@@ -140,7 +140,7 @@
 const proyectos = [
     {
     titulo: "Proyecto Brisas Santo Domingo",
-    descripcion: "Este es el Proyecto Brisas Santo Domingo.",
+    descripcion: "Diseño y construcción de una casa ubicada en el Litoral Central, pensada para combinar comodidad, funcionalidad y una conexión armónica con el entorno costero.",
     fecha:"25/20/2004",
     imagenPrincipal: "img/Brisas-Santo-Domingo/1.jpg",
     imagenes: [
@@ -232,10 +232,10 @@ const proyectos = [
         {
             titulo: "Proyecto Proyecto Litoral Central",
             descripcion: "Este es el Proyecto Vidrios Vista Libre",
-            fecha:"25/20/2004",
+            fecha:"19/08/2022",
             imagenPrincipal: "img/Proyecto Litoral Central/1.jpg",
             imagenes: [
-                "img/Proyecto Litoral Central/1.jpg",
+                "img/Proyecto Litoral Central/1.jpg", 
                 "img/Proyecto Litoral Central/2.jpg",
                 "img/Proyecto Litoral Central/3.jpg",
                 "img/Proyecto Litoral Central/4.jpg",
