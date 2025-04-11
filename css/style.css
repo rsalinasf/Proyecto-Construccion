@@ -615,7 +615,7 @@ a:focus {
 .about {
     position: relative;
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 
@@ -643,12 +643,35 @@ a:focus {
 }
 
 
+.rev-direction{
+    margin-top: 4rem;
+}
+
 
 
 @media (max-width: 767.98px) {
     .about .about-img {
         margin-bottom: 30px;
         height: auto;
+    }
+
+    .t-left{
+        text-align: center !important;
+        max-width: 100%;
+    }
+    
+    .t-left p{
+        font-size: 35px;
+        line-height: 40px;
+        margin-bottom: 1rem;
+    }
+    
+    .t-left h2{
+        font-size: 20px;
+    }
+
+    .rev-direction{
+        flex-direction: column-reverse;
     }
 }
 
