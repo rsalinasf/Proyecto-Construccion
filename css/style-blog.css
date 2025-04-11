@@ -27,7 +27,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: start;
+    max-width: 600px;
   }
   .project-info h3 {
     font-size: 1.5rem;
@@ -41,6 +42,7 @@
     font-size: 30px;
     color: white;
     text-transform: uppercase;
+    margin-bottom: 2rem;
   }
 
   #modalDescripcion{

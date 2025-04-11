@@ -166,7 +166,13 @@ a:focus {
 }
 
 .logo{
-    max-width: 100px;
+    max-width: 60px;
+    margin: 0 1rem;
+}
+
+.logo-cel{
+    max-width: 50px;
+    margin: 0 1rem;
 }
 
 .nav-bar .container-fluid {
@@ -229,7 +235,7 @@ a:focus {
     }
     
     .nav-bar .navbar {
-        padding: 20px;
+        padding: 0px;
     }
     
     .nav-bar .navbar-brand {
@@ -245,7 +251,7 @@ a:focus {
 
 @media (max-width: 991.98px) {
     .nav-bar .navbar {
-        padding: 15px;
+        padding: 0 10pxpx;
     }
     
     .nav-bar a.nav-link {
@@ -259,6 +265,12 @@ a:focus {
     .nav-bar .btn {
         display: none;
     }
+
+    .a-logo{
+        display: none;
+    }
+
+
 }
 
 
@@ -606,8 +618,17 @@ a:focus {
     padding: 100px 0;
 }
 
-.about .section-header {
-    margin-bottom: 30px;
+
+.t-left{
+    max-width: 500px;
+}
+
+.t-left p{
+    font-size: 35px;
+}
+
+.t-left h2{
+    font-size: 30px;
 }
 
 .about .about-img {
@@ -621,27 +642,8 @@ a:focus {
     object-fit: cover;
 }
 
-.about .about-text p {
-    font-size: 16px;
-}
 
-.about .about-text a.btn {
-    position: relative;
-    margin-top: 15px;
-    padding: 15px 35px;
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #000000;
-    border-radius: 0;
-    background: #e4e4e4;
-    transition: .3s;
-}
 
-.about .about-text a.btn:hover {
-    color: #e4e4e4;
-    background: #000000;
-}
 
 @media (max-width: 767.98px) {
     .about .about-img {

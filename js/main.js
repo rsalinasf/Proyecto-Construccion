@@ -181,7 +181,7 @@ const proyectos = [
     },
 
     {
-        titulo: "Proyecto Proyecto Interior",
+        titulo: "Proyecto Interior 2",
         descripcion: "Este es el Proyecto Interior.",
         fecha:"25/20/2004",
         imagenPrincipal: "img/Proyecto-Interior/1.jpg",
@@ -230,7 +230,7 @@ const proyectos = [
         },
 
         {
-            titulo: "Proyecto Proyecto Litoral Central",
+            titulo: "Proyecto Litoral Central",
             descripcion: "Este es el Proyecto Vidrios Vista Libre",
             fecha:"19/08/2022",
             imagenPrincipal: "img/Proyecto Litoral Central/1.jpg",
@@ -245,7 +245,7 @@ const proyectos = [
         },
 
         {
-            titulo: "Proyecto Proyecto Remodelación",
+            titulo: "Proyecto Remodelación",
             descripcion: "Este es el Proyecto Vidrios Vista Libre",
             fecha:"25/20/2004",
             imagenPrincipal: "img/Proyecto Remodelación/1.jpg",
