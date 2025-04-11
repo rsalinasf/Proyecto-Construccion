@@ -167,7 +167,11 @@ a:focus {
 
 .logo{
     max-width: 60px;
-    margin: 0 1rem;
+    margin: 0 0rem;
+}
+
+.a-logo{
+    margin-right: 1rem;
 }
 
 .logo-cel{
