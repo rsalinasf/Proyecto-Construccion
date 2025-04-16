@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Builderz</title>
+        <title>Constructora Bucalemu</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Construction Company Website Template" name="keywords">
         <meta content="Construction Company Website Template" name="description">
@@ -36,19 +36,30 @@
             <div class="nav-bar nav-sticky">
                 <div class="container-fluid">
                     <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-                        <a href="#" class="navbar-brand"><img class="logo-cel" src="img/momentaneo.png" alt=>Bucalemu</a>
+                        <div class="logo-container-cel" style="display: none;">
+                            <img class="logo-cel" src="img/momentaneo.png" alt="Logo">
+                            <a href="#" class="nav-item nav-link a-logo-cel">
+                              <span>Inmobiliaria y Constructora</span><br><span class="bucalemu-cel">Bucalemu</span>
+                            </a>
+                        </div>
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
                         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                             <div class="navbar-nav mr-auto align-items-center">
-                                <a href="#" class="nav-item nav-link a-logo"><img class="logo" src="img/momentaneo.png" alt=>Bucalemu </a>
+                                <div class="logo-container">
+                                    <img class="logo" src="img/momentaneo.png" alt="Logo">
+                                    <a href="#" class="nav-item nav-link a-logo">
+                                      <span>Inmobiliaria y Constructora</span><br><span class="bucalemu">Bucalemu</span>
+                                    </a>
+                                </div>
+                                  
                                 <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                                <a href="#nosotros" class="nav-item nav-link">Acerca de Nosotros</a>
+                                <a href="index.html#nosotros" class="nav-item nav-link">Acerca de Nosotros</a>
                                 <!--<a href="team.html" class="nav-item nav-link">Nuestro Equipo</a>-->
                                 <a href="blog.html" class="nav-item nav-link">Proyectos</a>
-                                <a href="#contacto" class="nav-item nav-link">Contacto</a>
+                                <a href="index.html#contacto" class="nav-item nav-link">Contacto</a>
                             </div>
                             <div class="ml-auto mr-3">
                                 <a class="btn" href="https://wa.me/+56956293256?text=Hola,%20estoy%20interesado%20en%20una%20cotización">Obtenga una cotización</a>
@@ -155,10 +166,10 @@
                         <div class="col-md-6 col-lg-3">
                             <div class="footer-link">
                                 <h2>Páginas útiles</h2>
-                                <a href="#">Inicio</a>
-                                <a href="#nosotros">Acerca de nosotros</a>
-                                <a href="#proyectos">Proyectos</a>
-                                <a href="#contacto">Contáctanos</a>
+                                <a href="index.html">Inicio</a>
+                                <a href="index.html#nosotros">Acerca de nosotros</a>
+                                <a href="blog.html">Proyectos</a>
+                                <a href="index.html#contacto">Contáctanos</a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3">
@@ -176,10 +187,15 @@
                 <div class="container copyright">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>&copy; <a href="#">Pigmedia Chile</a>, All Right Reserved.</p>
+                            <p>&copy; <a href="https://www.instagram.com/pigmediachile/" style="text-decoration: none;"><span style="color: red; display: inline;">Pig</span><span style="color: white; display: inline;">Media</span></a>, All Right Reserved.</p>
                         </div>
                         <div class="col-md-6">
-                            <p>Designed By <a href="">Pigmedia Chile</a></p>
+                            <p>
+                                Designed By Ricardo Salinas -
+                                <a href="https://www.instagram.com/pigmediachile/" style="text-decoration: none; border-bottom: 2px solid white;">
+                                  <span style="color: red; display: inline;">Pig</span><span style="color: white; display: inline;">Media Chile</span>
+                                </a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -205,5 +221,6 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
+        <script src="js/carousel-portfolio.js"></script>
     </body>
 </html>
