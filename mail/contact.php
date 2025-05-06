@@ -3,7 +3,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Reemplaza estos datos
-$to = 'contacto@constructorabucalemu.cl'; // tu correo real de DonWeb
+$to = 'contacto@constructorabucalemu.cl'; // tu correo 
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -15,7 +15,7 @@ $body = "Asunto: $subject\n";
 $body .= "Email: $email\n\n";
 $body .= "Mensaje:\n$message";
 
-$headers = "From: contacto@constructorabucalemu.cl\r\n"; // correo válido de DonWeb
+$headers = "From: contacto@constructorabucalemu.cl\r\n"; // correo válido
 $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 
