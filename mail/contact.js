@@ -14,6 +14,7 @@ $(function () {
             const subject = isMobile ? $("#subjectMobile").val() : $("#subject").val();
             const message = isMobile ? $("#messageMobile").val() : $("#message").val();
             const $this = isMobile ? $("#sendMessageButtonMobile") : $("#sendMessageButton");
+            const $successBox = isMobile ? $("#successMobile") : $("#success");
 
             $this.prop("disabled", true);
 
@@ -21,30 +22,30 @@ $(function () {
                 url: "mail/contact.php",
                 type: "POST",
                 data: {
-                    name: name,
-                    email: email,
-                    subject: subject,
-                    message: message
+                    name,
+                    email,
+                    subject,
+                    message
                 },
                 cache: false,
                 success: function () {
-                    $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success')
+                    $successBox.html("<div class='alert alert-success'>");
+                    $successBox.find('.alert-success')
                         .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
                         .append("<strong>¡Su mensaje ha sido enviado con éxito!</strong>")
                         .append('</div>');
                     $form.trigger("reset");
                 },
                 error: function () {
-                    $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger')
+                    $successBox.html("<div class='alert alert-danger'>");
+                    $successBox.find('.alert-danger')
                         .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
                         .append($("<strong>").text("Lo sentimos " + name + ", parece que nuestro servidor de correo no responde. ¡Inténtalo más tarde!"))
                         .append('</div>');
                     $form.trigger("reset");
                 },
                 complete: function () {
-                    setTimeout(function () {
+                    setTimeout(() => {
                         $this.prop("disabled", false);
                     }, 1000);
                 }
@@ -61,7 +62,7 @@ $(function () {
     });
 });
 
-// Limpia mensajes de éxito/error cuando el usuario comienza a escribir su nombre
+// Limpia mensaje al enfocar
 $('#name, #nameMobile').focus(function () {
-    $('#success').html('');
+    $('#success, #successMobile').html('');
 });
