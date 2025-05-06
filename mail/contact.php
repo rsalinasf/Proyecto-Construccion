@@ -11,6 +11,7 @@ $subject = $_POST['subject'];
 $message = $_POST['message'];
 
 $body = "Nombre: $name\n";
+$body = "Asunto: $subject\n";
 $body .= "Email: $email\n\n";
 $body .= "Mensaje:\n$message";
 
