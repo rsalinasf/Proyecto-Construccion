@@ -14,7 +14,7 @@ $body = "Nombre: $name\n";
 $body .= "Email: $email\n\n";
 $body .= "Mensaje:\n$message";
 
-$headers = "From: no-reply@c2820728.ferozo.com\r\n"; // correo válido de DonWeb
+$headers = "From: contacto@constructorabucalemu.cl\r\n"; // correo válido de DonWeb
 $headers .= "Reply-To: $email\r\n";
 $headers .= "Content-type: text/plain; charset=UTF-8\r\n";
 
