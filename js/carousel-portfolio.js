@@ -38,8 +38,7 @@ const proyectos = [
     imagenes: [
         "img/Interior-Santo-Domingo/1.jpg",
         "img/Interior-Santo-Domingo/2.jpg",
-        "img/Interior-Santo-Domingo/3.jpg",
-        "img/Interior-Santo-Domingo/4.jpg"
+        "img/Interior-Santo-Domingo/3.jpg"
     ]
     },
 
