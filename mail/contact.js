@@ -14,7 +14,6 @@ $(function () {
             const subject = isMobile ? $("#subjectMobile").val() : $("#subject").val();
             const message = isMobile ? $("#messageMobile").val() : $("#message").val();
             const $this = isMobile ? $("#sendMessageButtonMobile") : $("#sendMessageButton");
-            const $successBox = isMobile ? $("#successMobile") : $("#success");
 
             $this.prop("disabled", true);
 
@@ -29,19 +28,12 @@ $(function () {
                 },
                 cache: false,
                 success: function () {
-                    $successBox.html("<div class='alert alert-success'>");
-                    $successBox.find('.alert-success')
-                        .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
-                        .append("<strong>¡Su mensaje ha sido enviado con éxito!</strong>")
-                        .append('</div>');
+                    // Mostrar el modal
+                    $('#formSuccessModal').modal('show');
                     $form.trigger("reset");
                 },
                 error: function () {
-                    $successBox.html("<div class='alert alert-danger'>");
-                    $successBox.find('.alert-danger')
-                        .html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>")
-                        .append($("<strong>").text("Lo sentimos " + name + ", parece que nuestro servidor de correo no responde. ¡Inténtalo más tarde!"))
-                        .append('</div>');
+                    alert("Lo sentimos " + name + ", parece que nuestro servidor de correo no responde. ¡Inténtalo más tarde!");
                     $form.trigger("reset");
                 },
                 complete: function () {
@@ -60,9 +52,4 @@ $(function () {
         e.preventDefault();
         $(this).tab("show");
     });
-});
-
-// Limpia mensaje al enfocar
-$('#name, #nameMobile').focus(function () {
-    $('#success, #successMobile').html('');
 });
