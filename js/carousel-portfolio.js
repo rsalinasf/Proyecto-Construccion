@@ -44,80 +44,80 @@ const proyectos = [
     },
 
     {
-        titulo: "Proyecto Interior 2",
-        descripcion: "Este es el Proyecto Interior.",
-        fecha:"25/20/2004",
-        imagenPrincipal: "img/Proyecto-Interior/1.jpg",
-        imagenes: [
-            "img/Proyecto-Interior/1.jpg",
-            "img/Proyecto-Interior/2.jpg",
-            "img/Proyecto-Interior/3.jpg",
-            "img/Proyecto-Interior/4.jpg"
-        ]
-        },
-        
-        {
-        titulo: "Proyecto Santo Domingo 1",
-        descripcion: "Este es el Proyecto Santo-Domingo 1.",
-        fecha:"25/20/2004",
-        imagenPrincipal: "img/Santo-Domingo/1.jpg",
-        imagenes: [
-            "img/Santo-Domingo/1.jpg",
-            "img/Santo-Domingo/2.jpg"
-        ]
-        },
+    titulo: "Proyecto Interior 2",
+    descripcion: "Este es el Proyecto Interior.",
+    fecha:"25/20/2004",
+    imagenPrincipal: "img/Proyecto-Interior/1.jpg",
+    imagenes: [
+        "img/Proyecto-Interior/1.jpg",
+        "img/Proyecto-Interior/2.jpg",
+        "img/Proyecto-Interior/3.jpg",
+        "img/Proyecto-Interior/4.jpg"
+    ]
+    },
     
-        {
-        titulo: "Proyecto Santo Domingo 2",
-        descripcion: "Este es el Proyecto Santo Domingo 2.",
-        fecha:"25/20/2004",
-        imagenPrincipal: "img/Santo-Domingo-2/1.jpg",
-        imagenes: [
-            "img/Santo-Domingo-2/1.jpg",
-            "img/Santo-Domingo-2/2.jpg",
-            "img/Santo-Domingo-2/3.jpg",
-            "img/Santo-Domingo-2/4.jpg",
-            "img/Santo-Domingo-2/5.jpg"
-        ]
-        },
+    {
+    titulo: "Proyecto Santo Domingo 1",
+    descripcion: "Este es el Proyecto Santo-Domingo 1.",
+    fecha:"25/20/2004",
+    imagenPrincipal: "img/Santo-Domingo/1.jpg",
+    imagenes: [
+        "img/Santo-Domingo/1.jpg",
+        "img/Santo-Domingo/2.jpg"
+    ]
+    },
 
-        {
-            titulo: "Proyecto Ventanas Panorámicas",
-            descripcion: "Este es el Proyecto Ventanas Panorámicas",
-            fecha:"25/20/2004",
-            imagenPrincipal: "img/Vidrios-Vista-Libre/1.jpg",
-            imagenes: [
-                "img/Vidrios-Vista-Libre/1.jpg",
-                "img/Vidrios-Vista-Libre/2.jpg"
-            ]
-        },
+    {
+    titulo: "Proyecto Santo Domingo 2",
+    descripcion: "Este es el Proyecto Santo Domingo 2.",
+    fecha:"25/20/2004",
+    imagenPrincipal: "img/Santo-Domingo-2/1.jpg",
+    imagenes: [
+        "img/Santo-Domingo-2/1.jpg",
+        "img/Santo-Domingo-2/2.jpg",
+        "img/Santo-Domingo-2/3.jpg",
+        "img/Santo-Domingo-2/4.jpg",
+        "img/Santo-Domingo-2/5.jpg"
+    ]
+    },
 
-        {
-            titulo: "Proyecto Litoral Central",
-            descripcion: "Este es el Proyecto Vidrios Vista Libre",
-            fecha:"19/08/2022",
-            imagenPrincipal: "img/Proyecto Litoral Central/1.jpg",
-            imagenes: [
-                "img/Proyecto Litoral Central/1.jpg", 
-                "img/Proyecto Litoral Central/2.jpg",
-                "img/Proyecto Litoral Central/3.jpg",
-                "img/Proyecto Litoral Central/4.jpg",
-                "img/Proyecto Litoral Central/5.jpg",
-                "img/Proyecto Litoral Central/6.jpg"
-            ]
-        },
+    {
+      titulo: "Proyecto Ventanas Panorámicas",
+      descripcion: "Este es el Proyecto Ventanas Panorámicas",
+      fecha:"25/20/2004",
+      imagenPrincipal: "img/Vidrios-Vista-Libre/1.jpg",
+      imagenes: [
+          "img/Vidrios-Vista-Libre/1.jpg",
+          "img/Vidrios-Vista-Libre/2.jpg"
+      ]
+    },
 
-        {
-            titulo: "Proyecto Remodelación",
-            descripcion: "Este es el Proyecto Vidrios Vista Libre",
-            fecha:"25/20/2004",
-            imagenPrincipal: "img/Proyecto Remodelación/1.jpg",
-            imagenes: [
-                "img/Proyecto Remodelación/1.jpg",
-                "img/Proyecto Remodelación/2.jpg",
-                "img/Proyecto Remodelación/3.jpg"
-            ]
-        }
+    {
+      titulo: "Proyecto Litoral Central",
+      descripcion: "Este es el Proyecto Vidrios Vista Libre",
+      fecha:"19/08/2022",
+      imagenPrincipal: "img/Proyecto Litoral Central/1.jpg",
+      imagenes: [
+          "img/Proyecto Litoral Central/1.jpg", 
+          "img/Proyecto Litoral Central/2.jpg",
+          "img/Proyecto Litoral Central/3.jpg",
+          "img/Proyecto Litoral Central/4.jpg",
+          "img/Proyecto Litoral Central/5.jpg",
+          "img/Proyecto Litoral Central/6.jpg"
+      ]
+    },
+
+    {
+      titulo: "Proyecto Remodelación",
+      descripcion: "Este es el Proyecto Vidrios Vista Libre",
+      fecha:"25/20/2004",
+      imagenPrincipal: "img/Proyecto Remodelación/1.jpg",
+      imagenes: [
+          "img/Proyecto Remodelación/1.jpg",
+          "img/Proyecto Remodelación/2.jpg",
+          "img/Proyecto Remodelación/3.jpg"
+      ]
+    }
         
 
 ];
